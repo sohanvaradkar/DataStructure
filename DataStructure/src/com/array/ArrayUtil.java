@@ -13,7 +13,8 @@ public class ArrayUtil {
 			end--;
 		}
 	}
-	
+	  
+
 	public static void printArray(int[] arr) {
 		int n=arr.length;
 		for (int i = 0; i < n; i++) {
@@ -47,7 +48,7 @@ public class ArrayUtil {
 		printArray(numbers);
 		//reverse(numbers, 0, numbers.length-1);;
 		//printArray(numbers);
-		//findMinimum(null);
+		//findMinimum(null);123
 		System.out.println(numbers.length);
 		int[] newcapacity=resize(numbers,10);
 		System.out.println(newcapacity.length);
