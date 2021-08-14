@@ -20,7 +20,7 @@ public class StringUtil {
 
 	public static void main(String[] args) {
 		
-System.out.println(isPalindrome("adda"));
+System.out.println(isPalindrome("adda1"));
 	}
 
 }
