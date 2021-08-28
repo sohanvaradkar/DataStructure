@@ -7,7 +7,7 @@ public class NotificationFactory {
 		
 		if(channel==null||channel.isEmpty())
 		return null;
-		else if(channel.equals("SMS"))
+		else if(channel.equals("SMS1"))
 		return	new SmsNotification();
 		else if(channel.equals("EMAIL"))
 		return	new EmailNotification();
