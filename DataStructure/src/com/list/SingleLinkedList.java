@@ -333,18 +333,16 @@ slowPtr.next=null;
 public static void main(String[] args) 
 {
 	SingleLinkedList list =new SingleLinkedList();
-	/*
-	 * list.head=new ListNode(10); ListNode second=new ListNode(1); ListNode
-	 * third=new ListNode(30); ListNode fourth=new ListNode(55);
-	 */
-	
-	/*
-	 * list.head.next=second; second.next=third; third.next=fourth;
-	 */
-	/*
-	 * list.addAtStart(88); list.addAtStart(77); list.addAtStart(66);
-	 * list.addAtStart(33); list.addAtStart(22);
-	 */
+	// list.head=new ListNode(10);
+	/* ListNode second=new ListNode(1);
+	 ListNode third=new ListNode(30);
+	 ListNode fourth=new ListNode(55);
+
+	  list.head.next=second;
+	  second.next=third;
+	  third.next=fourth;*/
+	  list.addAtStart(88); list.addAtStart(77); list.addAtStart(66);
+	  list.addAtStart(33); list.addAtStart(22);
 
 	//list.addAtStart(66);
 	
@@ -355,24 +353,24 @@ public static void main(String[] args)
 	//list.deteteLast();
 	//list.deleteAt(2);
 
-	//list.print();
+
 	System.out.println();
 	//System.out.println(list.searchKey(22));
-	//ListNode node=list.reverse();
+	ListNode node=list.reverse();
 	//ListNode node=list.getMiddleNode();
-	//System.out.println(node.data);
+	list.print();
 	//ListNode node=	list.getNthNodeFromEnd(4);
 	//System.out.println(node.data);
 	//list.removeSortedDuplicate();
 	//list.insertInSortedList(67);
 	//list.removeNode(22);
 	
-	list.createLoop();
-	System.out.println(list.startNodeInLoop().data);
+	//list.createLoop();
+	//System.out.println(list.startNodeInLoop().data);
 	//list.print();
-	list.removeLoop();
-	System.out.println();
-	list.print();
+	//list.removeLoop();
+	//System.out.println();
+	//list.print();
 	//System.out.println(list.lenth());
 	
 }
