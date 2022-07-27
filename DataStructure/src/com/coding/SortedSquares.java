@@ -26,6 +26,6 @@ public class SortedSquares
     public static void main(String[] args) {
         int[] arr={-4, -1, 0, 3};
         int[] result= sortedSquares(arr);
-        System.out.println(result);
+        System.out.println(result.toString());
     }
 }

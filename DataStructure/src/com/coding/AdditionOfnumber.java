@@ -9,8 +9,7 @@ public class AdditionOfnumber {
     // Time complexity: O(n)
 
     private static int[] findTwoSumMap(int[] nums, int target) {
-        Map<Integer,
-                        Integer> numMap = new HashMap<>();
+        Map<Integer, Integer> numMap = new HashMap<>();
         for (int i = 0; i < nums.length; i++) {
             int complement = target - nums[i];
 

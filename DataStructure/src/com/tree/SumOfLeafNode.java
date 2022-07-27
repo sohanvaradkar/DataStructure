@@ -56,10 +56,29 @@ public class SumOfLeafNode {
         return sumOfLeaf(root.left,curSum*10+root.data)+sumOfLeaf(root.right,curSum*10+root.data);
     }
 
+    public boolean hasPathSum(TreeNode root, int targetSum) {
+        return sumOfLeaf(root,0,targetSum);
+    }
+    public boolean sumOfLeaf(TreeNode root,int curSum, int targetSum)
+    {
+
+        if(root==null)
+            return false;
+
+        curSum=curSum+root.data;
+        if(curSum==targetSum&&root.right==null&&root.left==null)
+        {
+                return true;
+        }
+
+        return (sumOfLeaf(root.left,curSum,targetSum)||
+                sumOfLeaf(root.right,curSum,targetSum));
+    }
     public static void main(String[] args) {
         SumOfLeafNode leaf=new SumOfLeafNode();
         leaf.createBinaryTree();
-        System.out.println(leaf.sumOfLeaf());
+
+        System.out.println(leaf.hasPathSum(leaf.root,8));
 
     }
 }
