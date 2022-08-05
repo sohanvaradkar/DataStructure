@@ -53,11 +53,6 @@ public class FindDuplicateArray {
         if (al.size()==0)
             al.add(-1);
         int[] arr = al.stream().mapToInt(i -> i).toArray();
-       /* if (arr.length==0)
-            arr[0]=-1;
-*/
-        for (int ar:arr)
-            System.out.println(ar);
         return arr;
     }
     private static int[] findDuplicatesUsingHashMap(int input ,int[] inputArray)
