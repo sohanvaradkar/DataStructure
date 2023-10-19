@@ -11,11 +11,11 @@ public class CharacterFrequencyString {
     public static void main(String[] args) {
         String s="i love goa";
 
-       Map<String,Long> result= Arrays.stream(s.split("")).
+       Map<String,Long> result= Arrays.stream(s.split(" ")).
                collect(Collectors.groupingBy(Function.identity(),Collectors.counting()));
         System.out.println(result);
 
-        System.out.println(Runtime.getRuntime().availableProcessors());
+        //System.out.println(Runtime.getRuntime().availableProcessors());
     }
 
 
